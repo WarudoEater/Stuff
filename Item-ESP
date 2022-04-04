@@ -1,4 +1,19 @@
--- Original Coder: https://v3rmillion.net/showthread.php?tid=1137756
+-- Original Coder: https://v3rmillion.net/showthread.php?tid=1137756 / https://v3rmillion.net/member.php?action=profile&uid=501204
+
+--[[
+_G.Enabled = true -- true/false
+
+_G.Settings = {
+    WhitelistedItems = {"item1", "item2", "item3"};
+    RefreshRate = 1; --How many seconds before it checks if there is a newly spawned item
+    TextSize = 15; -- Determines the size of the esps font size
+    TextColor = Color3.new(255,0,0); -- Changes the color of the text
+    TextStrokeTransparency = 0; -- Adjusts how transparent the texts stroke is
+    TextStrokeColor = Color3.new(0,0,0); -- color of the texts stroke
+}
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/WarudoEater/Stuff/main/Item-ESP')))()
+]]
 
 if _G.Enabled == false then
     _G.Running = false
